@@ -12,14 +12,14 @@ CREATE TABLE data_analyst_assessment (
 );
 
 COPY data_analyst_assessment(setup_id
-							 , platform
-							 , row_type
-							 , timestamp
-							 , model
-							 , step
-							 , duration
-							 , rating
-							)
+			     , platform
+			     , row_type
+			     , row_timestamp
+			     , model
+			     , step
+			     , duration
+			     , rating
+			    )
 FROM '/tmp/data_analyst_assessment.csv'
 DELIMITER ','
 CSV HEADER;
